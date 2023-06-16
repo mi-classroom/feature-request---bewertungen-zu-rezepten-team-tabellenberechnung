@@ -100,8 +100,9 @@
 .grid{
     display: grid;
     gap: var(--m);
-    grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: 5fr 1fr;
+    margin: --m;
+    }
 
 
 /* Steps
@@ -156,4 +157,12 @@
     font-size: var(--xl);
     font-weight: bold;
     line-height: var(--xl);
+}
+
+/* inputs
+############################################################################ */
+
+#portionen {
+    width: 35px;
+    background-color: rgb(255, 125, 190);
 }

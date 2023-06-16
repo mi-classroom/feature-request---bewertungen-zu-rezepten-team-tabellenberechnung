@@ -1,7 +1,7 @@
 /* Navigation
 ############################################################################ */
 
-.main-navigation{
+.main-navigation {
     position: sticky;
     top: 0;
     width: 100%;
@@ -9,37 +9,38 @@
     background-color: var(--lightest);
 }
 
-.main-navigation ul{
+.main-navigation ul {
     display: flex;
     padding: 0;
     gap: var(--m);
 }
 
-.main-navigation ul > li{
+.main-navigation ul>li {
     display: block;
 }
 
-.main-navigation ul > li a{
+.main-navigation ul>li a {
     color: var(--darker);
     text-decoration: none;
 }
 
-.main-navigation ul > li a:hover{
+.main-navigation ul>li a:hover {
     color: var(--darkest);
     font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 0.5ch;
 }
 
-.main-navigation ul > li:last-child {
+.main-navigation ul>li:last-child {
     flex-grow: 1;
     text-align: right;
 }
 
+
 /* Hero with image
 ############################################################################ */
 
-.hero-with-image{
+.hero-with-image {
     position: relative;
     width: 100%;
     max-width: var(--max-container-width);
@@ -48,14 +49,13 @@
     background-size: cover;
 }
 
-
-.hero-with-image > *{
+.hero-with-image>* {
     position: relative;
     z-index: 10;
     max-width: calc(var(--max-content-width) * 0.66);
 }
 
-.hero-with-image::after{
+.hero-with-image::after {
     position: absolute;
     z-index: 1;
     inset: 0;
@@ -63,7 +63,7 @@
     content: "";
 }
 
-.hero-with-image .content-navigation{
+.hero-with-image .content-navigation {
     position: fixed;
     z-index: 20;
     top: 110px;
@@ -74,76 +74,81 @@
     background-color: var(--pink);
 }
 
-.hero-with-image .content-navigation ul{
+.hero-with-image .content-navigation ul {
     padding: 0;
     margin: 0;
 }
 
-.hero-with-image .content-navigation ul > li{
+.hero-with-image .content-navigation ul>li {
     display: block;
 }
 
-.hero-with-image .content-navigation ul > li a{
+.hero-with-image .content-navigation ul>li a {
     color: var(--darker);
     text-decoration: none;
 }
 
-.hero-with-image .content-navigation ul > li a:hover{
+.hero-with-image .content-navigation ul>li a:hover {
     color: var(--darkest);
     text-decoration: underline;
     text-underline-offset: 0.5ch;
 }
 
+
 /* Grid
 ############################################################################ */
 
-.grid{
-    display: grid;
+.grid {
     gap: var(--m);
-    grid-template-columns: 5fr 1fr;
-    margin: --m;
-    }
+
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+
 
 
 /* Steps
 ############################################################################ */
 
-.steps{
+.steps {
     padding: 0;
     counter-reset: step-count;
 }
 
-.steps > li{
+.steps>li {
     display: block;
     counter-increment: step-count;
 }
 
-.steps > li.is-text-only{
+.steps>li.is-text-only {
     display: flex;
     justify-content: center;
 }
 
-.steps > li.is-text-only p{
+.steps>li.is-text-only p {
     max-width: calc(var(--max-content-width) * 0.5);
 }
 
-.steps > li figure{
+.steps>li figure {
     display: flex;
     width: auto;
     align-items: center;
     gap: var(--m);
 }
 
-.steps > li figure > *{
+.steps>li figure>* {
     flex-basis: 50%;
     flex-grow: 1;
 }
 
-.steps .is-reversed{
+.steps .is-reversed {
     flex-direction: row-reverse;
 }
 
-.steps .has-counter{
+.steps .has-counter {
     position: relative;
     padding-top: 0;
     margin-left: var(--xl);
@@ -159,10 +164,66 @@
     line-height: var(--xl);
 }
 
+
+
+/* Tabelle
+############################################################################ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-container table {
+    border-collapse: collapse;
+    width: 180%;
+}
+
+.table-container th,
+.table-container td {
+    padding: 8px;
+    text-align: left;
+    border: 2px solid #ebbc9d;
+}
+
+.nutrition-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition-value {
+    font-weight: bold;
+    color: #ebbc9d;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.werte {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#zutaten {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 1px;
+    margin-top: 10%;
+}
+
+#naehrwerte {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 30%;
+    margin-bottom: 0px;
+
 /* inputs
 ############################################################################ */
 
 #portionen {
     width: 35px;
     background-color: rgb(255, 125, 190);
+
 }

@@ -99,7 +99,6 @@ ol li {
 figure {
     padding-top: var(--xl);
     padding-bottom: var(--xl);
-    width: var(--figure-width);
 }
 
 figure img {

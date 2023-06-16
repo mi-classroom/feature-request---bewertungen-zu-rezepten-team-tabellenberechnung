@@ -177,7 +177,7 @@ table {
 
 .table-container table {
     border-collapse: collapse;
-    width: 180%;
+    width: 100%;
 }
 
 .table-container th,
@@ -218,12 +218,18 @@ table {
     font-size: 32px;
     margin-top: 30%;
     margin-bottom: 0px;
+}
 
 /* inputs
 ############################################################################ */
 
 #portionen {
-    width: 35px;
-    background-color: rgb(255, 125, 190);
+    width: 45px;
+    background-color: #ebbc9d;
 
+}
+
+#textxx {
+    font-size: 15px;
+    padding-bottom: 30px;
 }

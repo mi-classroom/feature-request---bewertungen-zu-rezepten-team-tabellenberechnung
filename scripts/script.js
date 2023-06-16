@@ -40,6 +40,10 @@ const rezeptZutaten = [
    
   berechneMengen();
 
+
+
+  
+
   const rezeptNaehrwerte = [
     { naehrwert: 'Kalorien', menge: 178, einheit: ' ' },
     { naehrwert: 'Kohlenhydrate', menge: 23, einheit: ' g' },

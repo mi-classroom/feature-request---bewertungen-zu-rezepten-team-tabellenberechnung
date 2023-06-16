@@ -100,12 +100,14 @@
 
 .grid {
     gap: var(--m);
+
     grid-template-columns: 1fr 1fr;
     width: 50%;
     display: flex;
     justify-content: space-between;
     margin-top: 1px;
 }
+
 
 
 /* Steps
@@ -163,6 +165,7 @@
 }
 
 
+
 /* Tabelle
 ############################################################################ */
 
@@ -215,4 +218,12 @@ table {
     font-size: 32px;
     margin-top: 30%;
     margin-bottom: 0px;
+
+/* inputs
+############################################################################ */
+
+#portionen {
+    width: 35px;
+    background-color: rgb(255, 125, 190);
+
 }
